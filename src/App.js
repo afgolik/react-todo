@@ -1,8 +1,8 @@
 import styles from './App.module.css';
 import { useEffect, useState } from 'react';
+import { TODOS_URL } from './utils/url';
 
 export const App = () => {
-	const TODOS_URL = 'https://jsonplaceholder.typicode.com/todos';
 	const [todos, setTodos] = useState([]);
 
 	useEffect(() => {
